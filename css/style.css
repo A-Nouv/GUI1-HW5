@@ -1,0 +1,24 @@
+/*
+Anderson Nouv
+Created: 12/15/22
+File: style.css
+*/
+
+/* Webpage background color */
+body {
+    background: #d2b48c;
+}
+
+/* Styling for displaying user's word and score */
+.word-score {
+    background-color: rgba(124, 42, 4, 0.541);
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Set width and height of the pieces */
+.pieces {
+    width: 65px;
+    height: 65px;
+}

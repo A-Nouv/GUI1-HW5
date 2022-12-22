@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+Anderson Nouv
+Created: 12/15/22
+File: index.html
+HW5
+Description: This project was to create a bit of a Scrabble game that had drag and drop
+elements. The tiles are used to create words, each tile has a certain value which will then be calculated to determine the user's score. The board has special spots that will double an individual letter's score or double the word's total score.
+-->
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Scrabble</title>
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+
+    <body>
+      <!-- Page content -->
+      <header id="main-header">
+        <div class="container">
+          <h1>Scrabble!</h1>
+        </div>
+      </header>
+
+      <!-- Scrabble Board One Line -->
+      <!-- Drop area in scrabble board -->
+      <div class="drop-area">
+        <img class="area" id="scrabbleBoard" src="graphics_data/Scrabble_Board_OneLine.png" alt="Board One Line">
+        <div id="board">
+          <div class="area"></div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="container">
+        
+        
+        <!-- Drop area in tile rack -->
+        <div class="drop-area">
+          <img class="area" id="tileRack" src="graphics_data/scrabble-tile-holder-406774_640.png" alt="Tile Holder">
+          <div id="rack"></div>
+        </div>
+        
+
+        <div class="word-score">Word: <span id="word">____</span> </div>
+        <div class="word-score">Score: <span id="score">0</span> </div>
+
+
+        <br>
+        <br>
+
+        <!-- Buttons -->
+        <button type="submit" onclick="">Submit Word</button>
+        <button type="submit" onclick="">Deal New Tiles</button>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- scrabble JavaScript -->
+      <script src="js/scrabble.js"></script>
+      <!-- Brings in jquery -->
+      <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+      
+      <!-- Brings in jquery validation plugin -->
+      <script src="js/jquery-validation-1.19.5/src/core.js"></script>
+
+      <!-- Got from the jquery website/api -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+      <script>
+        $(document).ready(function() {
+          display_letters();
+        });
+      </script>
+
+    </body>
+</html>
